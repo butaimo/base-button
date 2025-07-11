@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>グレーベースボタン改良</title>
+  <title>グレー背景＋アイコン3色ボタン</title>
   <style>
     body {
-      background: #eeeeee; /* グレー背景（サイトに溶け込みやすい） */
+      background: #f5f5f5;
       margin: 0;
       padding: 40px 0;
       display: flex;
@@ -20,24 +20,24 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      background-color: #cccccc; /* ボタン全体のベースを濃いグレーに */
+      background-color: #d0d0d0; /* ボタン全体グレー */
       border-radius: 40px;
       padding: 10px 20px 10px 10px;
       width: 260px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      color: #222222;
     }
 
     .tool-btn:hover {
       transform: scale(1.03);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
     }
 
     .icon-box {
       width: 42px;
       height: 42px;
-      background-color: #666666; /* アイコン部分をさらに濃いグレー */
-      color: #ffffff;
+      color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -47,33 +47,41 @@
       flex-shrink: 0;
     }
 
+    /* アイコン背景色3色 */
+    .icon-tokika {
+      background-color: #1976d2; /* 青系 */
+    }
+    .icon-report {
+      background-color: #fb8c00; /* オレンジ系 */
+    }
+    .icon-asyist {
+      background-color: #00bfa5; /* 緑系 */
+    }
+
     .tool-label {
       font-size: 16px;
       font-weight: 500;
-      color: #1c1c1c; /* やや黒寄りの文字色でコントラスト確保 */
+      color: #222222;
     }
   </style>
 </head>
 <body>
 
-  <!-- Tokika -->
   <a href="https://script.google.com/a/ana.co.jp/macros/s/AKfycbzR6gAB3NzUdLKoFgO_Sf9EJ_XkUhGRuPyukKc55-ZZVALj03w0/exec"
      class="tool-btn" target="_blank" rel="noopener noreferrer">
-    <div class="icon-box">⏰</div>
+    <div class="icon-box icon-tokika">⏰</div>
     <div class="tool-label">Tokika</div>
   </a>
 
-  <!-- 報告Tool -->
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2BWVwTG5jSaEUtiwXqOFQKaflh4x0ZykD0uTxFMMC5C63oA/viewform"
      class="tool-btn" target="_blank" rel="noopener noreferrer">
-    <div class="icon-box">📣</div>
+    <div class="icon-box icon-report">📣</div>
     <div class="tool-label">報告Tool</div>
   </a>
 
-  <!-- ASYiST -->
   <a href="https://asyist2.ana.co.jp/vpn/index.html"
      class="tool-btn" target="_blank" rel="noopener noreferrer">
-    <div class="icon-box">🔐</div>
+    <div class="icon-box icon-asyist">🔐</div>
     <div class="tool-label">ASYiST</div>
   </a>
 
