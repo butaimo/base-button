@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ツールリンクボタン</title>
+  <style>
+    body {
+      background: transparent;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .tool-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 32px;
+      font-size: 18px;
+      border-radius: 30px;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      width: 260px;
+      justify-content: center;
+    }
+
+    .tool-btn:hover {
+      transform: scale(1.06);
+    }
+
+    .btn-tokika {
+      background-color: #1976d2;
+    }
+    .btn-tokika:hover {
+      background-color: #1565c0;
+    }
+
+    .btn-report {
+      background: linear-gradient(45deg, #ffa726, #fb8c00);
+    }
+    .btn-report:hover {
+      background: linear-gradient(45deg, #fb8c00, #ef6c00);
+    }
+
+    .btn-asyist {
+      background: linear-gradient(to right, #00bfa5, #1de9b6);
+    }
+    .btn-asyist:hover {
+      background: linear-gradient(to right, #1de9b6, #00bfa5);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://script.google.com/a/ana.co.jp/macros/s/AKfycbzR6gAB3NzUdLKoFgO_Sf9EJ_XkUhGRuPyukKc55-ZZVALj03w0/exec"
+     class="tool-btn btn-tokika" target="_blank" rel="noopener noreferrer">
+    ⏰ Tokika
+  </a>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2BWVwTG5jSaEUtiwXqOFQKaflh4x0ZykD0uTxFMMC5C63oA/viewform"
+     class="tool-btn btn-report" target="_blank" rel="noopener noreferrer">
+    📣 報告Tool
+  </a>
+
+  <a href="https://asyist2.ana.co.jp/vpn/index.html"
+     class="tool-btn btn-asyist" target="_blank" rel="noopener noreferrer">
+    🔐 ASYiST
+  </a>
+
+</body>
+</html>
